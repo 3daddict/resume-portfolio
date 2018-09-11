@@ -15,6 +15,7 @@
 
     <script src="./assets/js/jquery-3.3.1.min.js" type="text/javascript"></script>
     <script src="./assets/js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="./assets/js/validator.js" type="text/javascript"></script>
     <script src="./assets/js/app.js" type="text/javascript"></script>
 </head>
 
@@ -344,6 +345,8 @@
             </div>
         </section>
 
+        <hr class="featurette-divider">
+
         <section class="contact-form container">
             <h2 class="h2-heading text-center">Contact <span class="text-muted">Me</span></h2>
             <form id="contact-form" method="post" action="contact.php" role="form">
@@ -356,8 +359,8 @@
                         <div class="col-md-6">
                             <div class="form-group">
                                 <label for="form_lastname">Name *</label>
-                                <input id="form_lastname" type="text" name="surname" class="form-control" placeholder="Please enter your lastname *"
-                                    required="required" data-error="Lastname is required.">
+                                <input id="form_lastname" type="text" name="name" class="form-control" placeholder="Please enter your full name *"
+                                    required="required" data-error="A name is required.">
                                 <div class="help-block with-errors"></div>
                             </div>
                         </div>
