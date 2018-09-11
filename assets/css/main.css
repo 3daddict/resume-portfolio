@@ -87,8 +87,8 @@ a:hover {
  * ------------------------------------------------------------------- */
 .about-container {
     width: 100%;
-    padding-right: 50px;
-    padding-left: 50px;
+    padding-right: 15%;
+    padding-left: 15%;
     margin-right: auto;
     margin-left: auto;
 }
@@ -130,7 +130,7 @@ a:hover {
  * ------------------------------------------------------------------- */
 .sec-testimonials {
     padding-top: 25px;
-    padding-bottom: 125px;
+    margin-bottom: 100px;
 }
 
 /* ===================================================================
@@ -188,7 +188,7 @@ section.s-skills>div.skills-outer {
     flex-direction: row;
     flex-wrap: wrap;
     margin-top: 1rem;
-    padding-bottom: 9rem;
+    padding-bottom: 1rem;
     justify-content: center;
 }
 
