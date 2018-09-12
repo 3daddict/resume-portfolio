@@ -8,14 +8,32 @@ body,
 }
 
 .hero {
+    position: relative;
     display: -ms-flexbox;
     display: flex;
-    background-image: url("../../images/bg.jpg");
+    background-image: url("../../images/portfolio-background.jpeg");
     background-size: cover;
     color: #fff;
     background-color: #333;
     text-shadow: 0 .05rem .1rem rgba(0, 0, 0, .5);
-    box-shadow: inset 0 0 5rem rgba(0, 0, 0, .5);
+    box-shadow: inset 0 0 35rem rgba(0, 0, 0, .5);
+    height: 100%;
+    animation: panning 50s infinite linear;
+}
+
+/* PANNING EFFECT */
+@keyframes panning {
+    0% {
+        background-position: 0% 0%;
+    }
+
+    50% {
+        background-position: 100% 0%;
+    }
+
+    100% {
+        background-position: 0 0;
+    }
 }
 
 .cover-container {
@@ -23,7 +41,8 @@ body,
 }
 
 .cover {
-    padding: 0 1.5rem;
+    padding: 1.5rem;
+    background-color: rgba(30, 30, 30, 0.25);
 }
 
 .cover .btn-lg {
@@ -39,22 +58,52 @@ body,
     margin-bottom: 0;
 }
 
+.last-name {
+    color: rgb(255, 193, 7);
+    font-weight: 500;
+}
+
+.text-yellow {
+    color: rgb(255, 193, 7);
+    font-weight: 500;
+}
+
+.learn-circle {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 50px;
+    border: 2px solid #EEE;
+    border-radius: 50%;
+    margin: auto 25px;
+}
+.learn-circle:hover {
+    color: rgb(255, 193, 7);
+    border: 2px solid rgb(255, 193, 7);
+    cursor: pointer;
+}
+
+.hide-text {
+    display: none;
+}
+
+.learn-circle:hover .hide-text {
+    display: block;
+    position: absolute;
+    bottom: -45px;
+}
+
+.learn-circle:hover .icon {
+    transform: translateY(-2px) rotate(45deg) ;
+}
+
 /* Links */
 a,
 a:focus,
 a:hover {
     color: #fff;
-}
-
-/* Custom default button */
-.btn-secondary,
-.btn-secondary:hover,
-.btn-secondary:focus {
-    color: #333;
-    text-shadow: none;
-    /* Prevent inheritance from `body` */
-    background-color: #fff;
-    border: .05rem solid #fff;
 }
 
 /* ===================================================================
@@ -80,6 +129,11 @@ a:hover {
 .nav-masthead .active {
     color: #fff;
     border-bottom-color: #fff;
+}
+
+.learn-btn {
+    background-color: rgba(30, 30, 30, 0.25);
+    
 }
 
 /* ===================================================================
@@ -208,15 +262,6 @@ section.s-skills>div.skills-outer {
  * responsive:
  * headings
  * ------------------------------------------------------------------- */
-@media (min-width: 48em) {
-    .masthead-brand {
-        float: left;
-    }
-
-    .nav-masthead {
-        float: right;
-    }
-}
 
 @media (min-width: 40em) {
 
