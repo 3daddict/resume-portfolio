@@ -27,12 +27,12 @@ body,
         background-position: 0% 0%;
     }
 
-    50% {
+    100% {
         background-position: 100% 0%;
     }
 
-    100% {
-        background-position: 0 0;
+    0% {
+        background-position: 0% 0%;
     }
 }
 
@@ -41,7 +41,7 @@ body,
 }
 
 .cover {
-    padding: 1.5rem;
+    padding: 1.5rem 1.5rem 2.0rem 1.5rem;
     background-color: rgba(30, 30, 30, 0.25);
 }
 
@@ -77,9 +77,9 @@ body,
     width: 50px;
     border: 2px solid #EEE;
     border-radius: 50%;
-    margin: auto 25px;
+    margin: auto 20px;
 }
-.learn-circle:hover {
+.learn-circle:hover, .learn-circle:active, .learn-circle:focus {
     color: rgb(255, 193, 7);
     border: 2px solid rgb(255, 193, 7);
     cursor: pointer;
@@ -260,13 +260,33 @@ section.s-skills>div.skills-outer {
 
 /* ------------------------------------------------------------------- 
  * responsive:
+ * learn-icons hover effects off on mobile
+ * ------------------------------------------------------------------- */
+ @media only screen and (max-width: 400px) {
+    .hide-text {
+        display: block;
+        position: absolute;
+        bottom: -45px;
+    }
+}
+
+/* ------------------------------------------------------------------- 
+ * responsive:
  * headings
  * ------------------------------------------------------------------- */
+ @media (min-width: 10em) {
+
+    .h2-heading {
+        font-size: 50px;
+        margin-top: 2rem;
+    }
+}
 
 @media (min-width: 40em) {
 
     .h2-heading {
         font-size: 50px;
+        margin-top: 2rem;
     }
 }
 
