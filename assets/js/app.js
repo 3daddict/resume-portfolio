@@ -11,7 +11,7 @@ function clickHandler(){
 
 function carouselRotation(){
     $('.carousel').carousel({
-        interval: 2000
+        interval: 10000
       })
 }
 
