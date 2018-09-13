@@ -79,6 +79,7 @@ body,
     border: 2px solid #EEE;
     border-radius: 50%;
     margin: auto 20px;
+    background-color: rgba(30, 30, 30, 0.5);
 }
 .learn-circle:hover, .learn-circle:active, .learn-circle:focus {
     color: rgb(255, 193, 7);
@@ -283,7 +284,7 @@ section.s-skills>div.skills-outer {
  * ------------------------------------------------------------------- */
 
   .contact-form{
-    margin-bottom: 25px;
+    margin-bottom: 50px;
   }
 
   /* ===================================================================
@@ -298,6 +299,9 @@ section.s-skills>div.skills-outer {
   .footer-sm-icon{
       margin: auto 2%;
   }
+  .footer-sm-icon:hover{
+    color: rgb(255, 193, 7);
+}
 
   .footer-main-content{
       background-color: #333;
