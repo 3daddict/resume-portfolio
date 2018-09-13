@@ -2,6 +2,7 @@ $(document).ready(initializePortfolio)
 
 function initializePortfolio(){
     carouselRotation()//run the carousel ratation
+    copyrightYear()//update copyright date
     
 }
 
@@ -60,3 +61,7 @@ $(function () {
         }
     })
 });
+
+function copyrightYear(){
+    $('#copyDate').text(new Date().getFullYear());
+}
