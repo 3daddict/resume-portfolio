@@ -18,7 +18,7 @@ body,
     background-color: #333;
     text-shadow: 0 .05rem .1rem rgba(0, 0, 0, .5);
     box-shadow: inset 0 0 35rem rgba(0, 0, 0, .5);
-    min-height: 100%;
+    background-size: 110%;
     animation: panning 50s infinite linear;
 }
 
@@ -143,8 +143,8 @@ a:hover {
  * ------------------------------------------------------------------- */
 .about-container {
     width: 100%;
-    padding-right: 15%;
-    padding-left: 15%;
+    padding-right: 10%;
+    padding-left: 10%;
     margin-right: auto;
     margin-left: auto;
 }
@@ -249,10 +249,10 @@ section.s-skills>div.skills-outer {
 }
 
 .skillIconContainer {
-    height: 6rem;
-    width: 6rem;
+    height: 4rem;
+    width: 4rem;
     display: inline-block;
-    margin: 38px;
+    margin: 30px;
 }
 
 .skillIconContainer img {
@@ -385,8 +385,8 @@ section.s-skills>div.skills-outer {
     }
 
     .skillIconContainer {
-        height: 6rem;
-        width: 6rem;
+        height: 4rem;
+        width: 4rem;
         display: inline-block;
         margin: 30px;
     }
@@ -407,8 +407,8 @@ section.s-skills>div.skills-outer {
     }
 
     .skillIconContainer {
-        height: 6rem;
-        width: 6rem;
+        height: 4rem;
+        width: 4rem;
         display: inline-block;
         margin: 30px;
     }
@@ -429,8 +429,8 @@ section.s-skills>div.skills-outer {
     }
 
     .skillIconContainer {
-        height: 5rem;
-        width: 5rem;
+        height: 3.5rem;
+        width: 3.5rem;
         display: inline-block;
         margin: 30px;
     }
@@ -451,8 +451,8 @@ section.s-skills>div.skills-outer {
     }
 
     .skillIconContainer {
-        height: 5rem;
-        width: 5rem;
+        height: 3rem;
+        width: 3rem;
         display: inline-block;
         margin: 24px;
     }
@@ -469,8 +469,8 @@ section.s-skills>div.skills-outer {
     }
 
     .skillIconContainer {
-        height: 5rem;
-        width: 5rem;
+        height: 3rem;
+        width: 3rem;
         display: inline-block;
         margin: 30px;
     }
