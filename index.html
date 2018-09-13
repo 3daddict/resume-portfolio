@@ -5,22 +5,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="description" content="Web Developer Portfolio">
+    <meta name="description" content="Michael Salvati - Web Developer Portfolio">
     <meta name="author" content="Michael Salvati">
 
     <title>Michael Salvati | Web Developer</title>
 
     <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/css/fontawesome.css">
+    <link rel="stylesheet" href="./assets/css/light.css">
+    <link rel="stylesheet" href="./assets/css/brands.css">
     <link rel="stylesheet" href="./assets/css/main.css">
 
     <script src="./assets/js/jquery-3.3.1.min.js" type="text/javascript"></script>
     <script src="./assets/js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="./assets/js/validator.js" type="text/javascript"></script>
+    <script src="./assets/js/light.js" type="text/javascript"></script>
+    <script src="./assets/js/brands.js" type="text/javascript"></script>
+    <script src="./assets/js/fontawesome.js" type="text/javascript"></script>
     <script src="./assets/js/app.js" type="text/javascript"></script>
 </head>
 
 <body>
 
     <section class="hero text-center">
+        <div id="overlay"></div>
         <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
             <header class="masthead mb-auto">
                 <div class="inner">
@@ -30,32 +38,43 @@
                         <a class="nav-link" href="#">About</a>
                         <a class="nav-link" href="#">Applications</a>
                         <a class="nav-link" href="#">Skills</a>
-                        <a class="nav-link" href="#">Testimonials</a>
+                        <a class="nav-link" href="#">Recommendations</a>
                         <a class="nav-link" href="#">Contact</a>
                         <a class="nav-link" href="#">Resume</a>
                     </nav>
                 </div>
             </header>
 
-            <main role="main" class="inner cover">
-                <h1 class="cover-heading">Cover your page.</h1>
-                <p class="lead">Cover is a one-page template for building simple and beautiful home pages. Download,
-                    edit
-                    the text, and add your own fullscreen background photo to make it your own.</p>
-                <p class="lead">
-                    <a href="#" class="btn btn-lg btn-secondary">Learn more</a>
-                </p>
+            <main role="main" class="cover">
+                <h1 class="h2-heading text-center">Michael <span class="last-name">Salvati</span></h1>
+                <p class="lead">Welcome, I am a <span class="text-yellow">Web Developer</span> specializing in both
+                    front-end and back-end technologies.</p>
+                <div class="learn-icons row justify-content-center">
+                    <a href="#" target="_blank" class="learn-circle" aria-haspopup="true">
+                        <div class="icon"><i class="fal fa-file-alt"></i></div>
+                        <p class="hide-text">Resume</p>
+                    </a>
+                    <a href="#" target="_blank" class="learn-circle" aria-haspopup="true">
+                        <div class="icon"><i class="fab fa-linkedin"></i></div>
+                        <p class="hide-text">LinkedIn</p>
+                    </a>
+                    <a href="#" target="_blank" class="learn-circle" aria-haspopup="true">
+                        <div class="icon"><i class="fab fa-github"></i></div>
+                        <p class="hide-text">GitHub</p>
+                    </a>
+                </div>
             </main>
 
             <div class="mt-auto"></div>
     </section>
 
     <section class="about-container">
-            <h2 class="h2-heading text-center">About <span class="text-muted">Me</span></h2>
+        <h2 class="h2-heading text-center">About <span class="text-muted">Me</span></h2>
         <div class="row text-center">
-            <p class="lead">Working with front and back end development including HTML5, CSS3, JavaScript/jQuery, PHP,
-                MySQL, React, Git/GitHub, Node.JS, Bootstrap, and Firebase. currently seeking opportunities to bring my
-                passion and dedication to web development to your company.
+            <p class="lead">Working with both front and back end web development including <strong>HTML5, CSS3,
+                    JavaScript/jQuery, PHP, MySQL, Git/GitHub, Node.js, React, Redux and Bootstrap/Materialize</strong>.
+                I am currently seeking opportunities to bring my passion and dedication to web development to your
+                company.
             </p>
             <p class="lead">
                 Over the last six years I have been part of an innovative start-up company in the Solar Industry that
@@ -65,14 +84,14 @@
                 passion for web development.
             </p>
             <p class="lead">
-                After short time as a successful Sales Engineer I never gave up web development and decided to enroll
-                at LearningFuze, an accelerated Web Development Program. I had the privilege to work on a variety of
-                solo and group projects as both front-end and back-end roles.
+                After short time as a successful Sales Engineer I never gave up on my passion for web development and
+                decided to enroll at LearningFuze, an accelerated Web Development Program. I had the privilege to work
+                on a variety of solo and group projects as both front-end and back-end roles.
             </p>
             <p class="lead">
                 I am predominantly a front-end developer and have experience in JavaScript, jQuery, PHP and Node.js
                 with React. I am experienced in Git version control with both GitHub and Bitbucket as well as
-                deployment operations.
+                Agile Product Management.
             </p>
             <p class="lead">
                 My background in Design, Engineering, Management and Sales coupled with the knowledge I have gained as
@@ -88,17 +107,20 @@
 
         <div class="row featurette">
             <div class="col-md-7">
-                <h2 class="featurette-heading">First featurette heading. <span class="text-muted">It'll blow your mind.</span></h2>
-                <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis
-                    euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus,
-                    tellus ac cursus commodo.</p>
+                <h2 class="featurette-heading">OneClickSolar.com <br>
+                    <span class="text-muted">Front-End | UI/UX</span></h2>
+                <p class="lead">OneClickSolar is a California startup which brings instant quotes for home solar
+                    installation on a single web application where you can compare multiple packages. My main role was
+                    <strong>Front-End, UI/UX and Agile Product Management</strong>. This web application was built with
+                    PHP, HTML5, CSS3 and Bootstrap with custom styling. It is fully responsive for desktop, laptops,
+                    tablets and mobile.</p>
                 <div class="link-btn-container">
-                    <button class="btn btn-warning">Live Link</button>
-                    <button class="btn btn-success">GitHub Link</button>
+                    <a class="btn btn-warning" a href="https://oneclicksolar.com" target="_blank"><i class="fal fa-external-link"></i>
+                        Live Link</a>
                 </div>
             </div>
-            <div class="col-md-5">
-                <img class="featurette-image img-fluid mx-auto" src="./images/temp.svg" alt="Generic placeholder image">
+            <div class="col-md-5 my-auto">
+                <img class="featurette-image img-fluid" src="./images/portfolio/oneclicksolar-thumbnail.png" alt="OneClickSolar responsive web design">
             </div>
         </div>
 
@@ -111,8 +133,8 @@
                     euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus,
                     tellus ac cursus commodo.</p>
                 <div class="link-btn-container">
-                    <button class="btn btn-warning">Live Link</button>
-                    <button class="btn btn-success">GitHub Link</button>
+                    <a class="btn btn-warning" href="#" target="_blank"><i class="fal fa-external-link"></i> Live Link</a>
+                    <a class="btn btn-primary" href="#" target="_blank"><i class="fab fa-github"></i> GitHub Link</a>
                 </div>
             </div>
             <div class="col-md-5 order-md-1">
@@ -129,165 +151,345 @@
                     euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus,
                     tellus ac cursus commodo.</p>
                 <div class="link-btn-container">
-                    <button class="btn btn-warning">Live Link</button>
-                    <button class="btn btn-success">GitHub Link</button>
+                    <a class="btn btn-warning" href="#" target="_blank"><i class="fal fa-external-link"></i> Live Link</a>
+                    <a class="btn btn-primary" href="#" target="_blank"><i class="fab fa-github"></i> GitHub Link</a>
                 </div>
             </div>
             <div class="col-md-5">
                 <img class="featurette-image img-fluid mx-auto" src="./images/temp.svg" alt="Generic placeholder image">
             </div>
         </div>
+    </section>
 
-        <hr class="featurette-divider">
+    <hr class="featurette-divider">
 
-        <section class="skills-container">
-            SKILLS HERE
-        </section>
+    <section class="skills-container">
+        <h2 class="h2-heading text-center">Skills</h2>
+        <div class="row">
+            <div class="col-12 text-center">
+                <div class="skillContainer">
+                    <div class="skillIconContainer skill-float">
+                        <img src="./images/tech_icons/javascript.png" alt="javascript">
+                        <p>JavaScript</p>
+                    </div>
+                    <div class="skillIconContainer skill-float">
+                        <img src="./images/tech_icons/html.png" alt="html">
+                        <p>HTML5</p>
+                    </div>
+                    <div class="skillIconContainer skill-float">
+                        <img src="./images/tech_icons/css.png" alt="css">
+                        <p>CSS3</p>
+                    </div>
+                    <div class="skillIconContainer skill-float">
+                        <img src="./images/tech_icons/jQuery.png" alt="jQuery">
+                        <p>jQuery</p>
+                    </div>
+                    <div class="skillIconContainer skill-float">
+                        <img src="./images/tech_icons/es6.png" alt="es6">
+                        <p>ECMAScript6</p>
+                    </div>
+                    <div class="skillIconContainer skill-float">
+                        <img src="./images/tech_icons/react.png" alt="react">
+                        <p>React.js</p>
+                    </div>
+                    <div class="skillIconContainer skill-float">
+                        <img src="./images/tech_icons/redux.png" alt="redux">
+                        <p>Redux</p>
+                    </div>
+                    <div class="skillIconContainer skill-float">
+                        <img src="./images/tech_icons/materializecss.png" alt="materialize">
+                        <p>Materialize</p>
+                    </div>
+                    <div class="skillIconContainer skill-float">
+                        <img src="./images/tech_icons/bootstrap.png" alt="bootstrap">
+                        <p>Bootstrap</p>
+                    </div>
+                    <div class="skillIconContainer skill-float">
+                        <img src="./images/tech_icons/git.png" alt="git">
+                        <p>Git</p>
+                    </div>
+                    <div class="skillIconContainer skill-float">
+                        <img src="./images/tech_icons/github.png" alt="github">
+                        <p>Github</p>
+                    </div>
+                    <div class="skillIconContainer skill-float">
+                        <img src="./images/tech_icons/node.png" alt="node">
+                        <p>Node.js</p>
+                    </div>
+                    <div class="skillIconContainer skill-float">
+                        <img src="./images/tech_icons/php.png" alt="php">
+                        <p>PHP</p>
+                    </div>
+                    <div class="skillIconContainer skill-float">
+                        <img src="./images/tech_icons/mySql.png" alt="mySql">
+                        <p>MySQL</p>
+                    </div>
+                    <div class="skillIconContainer skill-float">
+                        <img src="./images/tech_icons/ajax.png" alt="ajax">
+                        <p>AJAX</p>
+                    </div>
+                    <div class="skillIconContainer skill-float">
+                        <img src="./images/tech_icons/chrome.png" alt="chrome dev tools">
+                        <p>Chrome DevTools</p>
+                    </div>
+                    <div class="skillIconContainer skill-float">
+                        <img src="./images/tech_icons/aws.png" alt="aws">
+                        <p>AWS EC-2</p>
+                    </div>
+                    <div class="skillIconContainer skill-float">
+                        <img src="./images/tech_icons/wordpress.png" alt="wordpress">
+                        <p>WordPress</p>
+                    </div>
+                    <div class="skillIconContainer skill-float">
+                        <img src="./images/tech_icons/trello.png" alt="trello">
+                        <p>Trello</p>
+                    </div>
+                    <div class="skillIconContainer skill-float">
+                        <img src="./images/tech_icons/meistertask.png" alt="meistertask">
+                        <p>MeisterTask</p>
+                    </div>
+                    <div class="skillIconContainer skill-float">
+                        <img src="./images/tech_icons/postman.png" alt="postman">
+                        <p>Postman</p>
+                    </div>
+                    <div class="skillIconContainer skill-float">
+                        <img src="./images/tech_icons/atom.jpg" alt="atom">
+                        <p>Atom</p>
+                    </div>
+                    <div class="skillIconContainer skill-float">
+                        <img src="./images/tech_icons/vscode.png" alt="vscode">
+                        <p>VS Code</p>
+                    </div>
+                    <div class="skillIconContainer skill-float">
+                        <img src="./images/tech_icons/slack.png" alt="slack">
+                        <p>Slack</p>
+                    </div>
 
-        <hr class="featurette-divider">
+                </div> <!-- end skills -->
+            </div> <!-- end col-full -->
+        </div>
+    </section>
 
-        <section id="sec-testimonials" class="sec-testimonials">
-            <div class="container">
-                <h1 class="h2-heading text-center">Testimonials</h1>
+    <hr class="featurette-divider">
 
-                <div id="carouselIndicators" class="carousel slide" data-ride="carousel">
-                    <ol class="carousel-indicators">
-                        <li data-target="#carouselIndicators" data-slide-to="0" class="active"></li>
-                        <li data-target="#carouselIndicators" data-slide-to="1"></li>
-                        <li data-target="#carouselIndicators" data-slide-to="2"></li>
-                    </ol>
+    <section id="sec-testimonials" class="sec-testimonials">
+        <div class="container">
+            <h1 class="h2-heading text-center">Recommendations</h1>
 
-                    <div class="carousel-inner" role="listbox">
-                        <div class="carousel-item active">
-                            <div class="row justify-content-center">
-                                <div class="col-md-10">
-                                    <blockquote class="blockquote">
-                                        <small>I have had the pleasure of working with Michael over the past five years
-                                            and have watched him exceed all expectations. Michael was initially hired
-                                            as an engineer/ product designer for my company and eventually joined me as
-                                            my partner. Michael is extremely talented in both design and sales.
-                                            Although he had very little experience in sales, Michael used his design
-                                            experience to create attractive and focused marketing material which he
-                                            used in his sales presentations. He also demonstrated exceptional abilities
-                                            to work with customers and carefully handle their requests and inquires
-                                            which enabled him to build a strong relationship with clients. I highly
-                                            recommend Michael to any company for either sales or engineering as he is
-                                            truly talented and can be a great asset.</small>
+            <div id="carouselIndicators" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#carouselIndicators" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselIndicators" data-slide-to="1"></li>
+                    <li data-target="#carouselIndicators" data-slide-to="2"></li>
+                </ol>
 
-                                        <footer class="blockquote-footer mt-2">Shane Shamloo | CEO at OneClickSolar
-                                            Inc.</footer>
-                                    </blockquote>
-                                </div>
-                            </div>
-                        </div>
+                <div class="carousel-inner" role="listbox">
+                    <div class="carousel-item active">
+                        <div class="row justify-content-center">
+                            <div class="col-md-10">
+                                <blockquote class="blockquote">
+                                    <small>I have had the pleasure of working with Michael over the past five years
+                                        and have watched him exceed all expectations. Michael was initially hired
+                                        as an engineer/ product designer for my company and eventually joined me as
+                                        my partner. Michael is extremely talented in both design and engineering.
+                                        Although he had very little experience in sales, Michael used his design
+                                        experience to create attractive and focused marketing material which he
+                                        used in his sales presentations. He also demonstrated exceptional abilities
+                                        to work with customers and carefully handle their requests and inquires
+                                        which enabled him to build a strong relationship with clients. I highly
+                                        recommend Michael to any company as he is truly talented and can be a great
+                                        asset.</small>
 
-                        <div class="carousel-item">
-                            <div class="row justify-content-center">
-                                <div class="col-md-10">
-                                    <blockquote class="blockquote">
-                                        <small>Working with Michael has been a pleasure. Very easy to get along with
-                                            yet holds himself to high standards day in and day out and gets the job
-                                            done. Michael has an outstanding knowledge in additive manufacturing and is
-                                            constantly striving to immerse himself in the technology. Having someone
-                                            such as Michael on any team trying to implement 3D printing, would
-                                            instantly reap the benefits of his expertise and personable nature.</small>
-
-                                        <footer class="blockquote-footer mt-2">Jordan Nowak | Additive Manufacturing
-                                            Engineer at Engman-Taylor</footer>
-                                    </blockquote>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="carousel-item">
-                            <div class="row justify-content-center">
-                                <div class="col-md-10">
-                                    <blockquote class="blockquote">
-                                        <small>I have worked a lot with Michael Salvati over the last several years and
-                                            his level of professionalism is spot on. Michael pays attention to detail
-                                            making sure I get exactly what I asked for, I never have to follow up with
-                                            him, he is in constant communication with me and that is very rare these
-                                            days. His honesty and ability to get the projects to me in a timely matter
-                                            is always when he says. I seek his advice on all of my projects and he has
-                                            always been able to deliver. I recommend Michael for any project you might
-                                            have and with out a doubt you will be 100% satisfied with the end result. I
-                                            give Michael a 10 out of 10 and I have never be disappointed in anything he
-                                            has done for me and my company.</small>
-
-                                        <footer class="blockquote-footer mt-2">Brett Seaman | CEO of Bear Mtn Solar
-                                            Energy</footer>
-                                    </blockquote>
-                                </div>
+                                    <footer class="blockquote-footer mt-2">Shane Shamloo | CEO at OneClickSolar
+                                        Inc.</footer>
+                                </blockquote>
                             </div>
                         </div>
                     </div>
 
-                    <a class="carousel-control-prev" href="#carouselIndicators" role="button" data-slide="prev">
-                        <span class="fa fa-angle-left fa-2x"></span>
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="sr-only">Previous</span>
-                    </a>
+                    <div class="carousel-item">
+                        <div class="row justify-content-center">
+                            <div class="col-md-10">
+                                <blockquote class="blockquote">
+                                    <small>Working with Michael has been a pleasure. Very easy to get along with
+                                        yet holds himself to high standards day in and day out and gets the job
+                                        done. Michael has an outstanding knowledge in additive manufacturing and is
+                                        constantly striving to immerse himself in the technology. Having someone
+                                        such as Michael on any team, would instantly reap the benefits of his
+                                        expertise and personable nature.</small>
 
-                    <a class="carousel-control-next" href="#carouselIndicators" role="button" data-slide="next">
-                        <span class="fa fa-angle-right fa-2x"></span>
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="sr-only">Next</span>
-                    </a>
+                                    <footer class="blockquote-footer mt-2">Jordan Nowak | Additive Manufacturing
+                                        Engineer at Engman-Taylor</footer>
+                                </blockquote>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <div class="row justify-content-center">
+                            <div class="col-md-10">
+                                <blockquote class="blockquote">
+                                    <small>I have worked a lot with Michael Salvati over the last several years and
+                                        his level of professionalism is spot on. Michael pays attention to detail
+                                        making sure I get exactly what I asked for, I never had to follow up with
+                                        him, he was always in constant communication with me and that is very rare
+                                        these days. I seek his advice on all of my projects and he has always been
+                                        able to deliver. I recommend Michael for any project management role you
+                                        might
+                                        have and with out a doubt you will be 100% satisfied with the end result. I
+                                        give Michael a 10 out of 10 and I have never be disappointed in anything he
+                                        has done for me and my company.</small>
+
+                                    <footer class="blockquote-footer mt-2">Brett Seaman | CEO of Bear Mtn Solar
+                                        Energy</footer>
+                                </blockquote>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <a class="carousel-control-prev" href="#carouselIndicators" role="button" data-slide="prev">
+                    <span class="fal fa-angle-left fa-2x"></span>
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+
+                <a class="carousel-control-next" href="#carouselIndicators" role="button" data-slide="next">
+                    <span class="fal fa-angle-right fa-2x"></span>
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <hr class="featurette-divider">
+
+    <section class="contact-form container">
+        <div class="connatiner">
+            <h2 class="h2-heading text-center">Contact <span class="text-muted">Me</span></h2>
+            <h4>Let’s connect!</h4>
+            <p>If you have any questions, are interested in a working on a project with me or would like to
+                schedule an interview. Please fill out the form below and I will get back to you as soon as
+                possible.</p>
+        </div>
+        <form id="contact-form" method="post" action="contact.php" role="form">
+
+            <div class="messages"></div>
+
+            <div class="controls">
+
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="form_lastname">Name *</label>
+                            <input id="form_lastname" type="text" name="name" class="form-control" placeholder="Please enter your full name *"
+                                required="required" data-error="A name is required.">
+                            <div class="help-block with-errors"></div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="form_email">Email *</label>
+                            <input id="form_email" type="email" name="email" class="form-control" placeholder="Please enter your email *"
+                                required="required" data-error="Valid email is required.">
+                            <div class="help-block with-errors"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="form-group">
+                            <label for="form_message">Message *</label>
+                            <textarea id="form_message" name="message" class="form-control" placeholder="Message for me *"
+                                rows="4" required="required" data-error="Please, leave us a message."></textarea>
+                            <div class="help-block with-errors"></div>
+                        </div>
+                    </div>
+                    <div class="col-md-12">
+                        <input type="submit" class="btn btn-success btn-send" value="Send message">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <p class="text-muted">
+                            <strong>*</strong> These fields are required.</p>
+                    </div>
+                </div>
+            </div>
+
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer class="page-footer">
+        <section class="footer-bar">
+            <div class="container">
+                <div class="row py-4 d-flex align-items-center">
+                    <div class="col-md-6 col-lg-5 text-center text-md-left mb-4 mb-md-0">
+                        <h4 class="mb-0">Let's connect</h4>
+                    </div>
+                    <div class="col-md-6 col-lg-7 text-center text-md-right">
+                        <a href="#" target="_blank" class="footer-sm-icon"><i class="fal fa-file-alt"></i></a>
+                        <a href="#" target="_blank" class="footer-sm-icon"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" target="_blank" class="footer-sm-icon"><i class="fab fa-github"></i></a>
+                    </div>
                 </div>
             </div>
         </section>
-
-        <section class="contact-form container">
-            <h2 class="h2-heading text-center">Contact <span class="text-muted">Me</span></h2>
-            <form id="contact-form" method="post" action="contact.php" role="form">
-
-                <div class="messages"></div>
-
-                <div class="controls">
-
-                    <div class="row">
-                        <div class="col-md-6">
-                            <div class="form-group">
-                                <label for="form_lastname">Name *</label>
-                                <input id="form_lastname" type="text" name="surname" class="form-control" placeholder="Please enter your lastname *"
-                                    required="required" data-error="Lastname is required.">
-                                <div class="help-block with-errors"></div>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="form-group">
-                                <label for="form_email">Email *</label>
-                                <input id="form_email" type="email" name="email" class="form-control" placeholder="Please enter your email *"
-                                    required="required" data-error="Valid email is required.">
-                                <div class="help-block with-errors"></div>
-                            </div>
-                        </div>
+        <section class="footer-main-content">
+            <div class="container text-center text-md-left">
+                <div class="row">
+                    <div class="col-sm-5 mx-auto mb-4">
+                        <h6 class="text-uppercase font-weight-bold">Michael Salvati</h6>
+                        <hr class="footer-hr-accent accent-2 mb-4 mt-0 d-inline-block mx-auto">
+                        <p>Web developer specializing in both front-end and back-end technologies.</p>
                     </div>
-                    <div class="row">
-                        <div class="col-md-12">
-                            <div class="form-group">
-                                <label for="form_message">Message *</label>
-                                <textarea id="form_message" name="message" class="form-control" placeholder="Message for me *"
-                                    rows="4" required="required" data-error="Please, leave us a message."></textarea>
-                                <div class="help-block with-errors"></div>
-                            </div>
-                        </div>
-                        <div class="col-md-12">
-                            <input type="submit" class="btn btn-success btn-send" value="Send message">
-                        </div>
+                    <div class="col-sm-3 mx-auto mb-4">
+                        <h6 class="text-uppercase font-weight-bold">Skills</h6>
+                        <hr class="footer-hr-accent accent-2 mb-4 mt-0 d-inline-block mx-auto">
+                        <p>Front-End | UI/UX</p>
+                        <p>Back-End Programming</p>
+                        <p>Git Version Control</p>
+                        <p>Agile Product Management</p>
                     </div>
-                    <div class="row">
-                        <div class="col-md-12">
-                            <p class="text-muted">
-                                <strong>*</strong> These fields are required.</p>
-                        </div>
+                    <div class="col-sm-2 mx-auto mb-4">
+                        <h6 class="text-uppercase font-weight-bold">Portfolio Apps</h6>
+                        <hr class="footer-hr-accent accent-2 mb-4 mt-0 d-inline-block mx-auto">
+                        <p><a href="#!"><i class="fal fa-external-link"></i> OneClickSolar.com</a></p>
+                        <p><a href="#!"><i class="fal fa-external-link"></i> Movie Search DB</a></p>
+                        <p><a href="#!"><i class="fal fa-external-link"></i> Final Project</a></p>
+                        <p><a href="#!"><i class="fal fa-external-link"></i> Personal Project</a></p>
                     </div>
                 </div>
+            </div>
+        <div class="text-muted text-center">© Michael Salvati <span id="copyDate"></span></div>
+    </section>
 
-            </form>
-        </section>
+    </footer>
+    <!-- Footer -->
 
-</body>
+    <!-- <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6">
+                    <h6>Michael Salvati <br> <span class="text-yellow">Web Developer</span> <br> <span class="text-muted">Orange County, CA</span></h6>
+                </div>
+                <div class="col-sm-6">
+                    <div class="footer-contact float-right">
+                        <a href = "mailto: info@msalvati.com"><i class="fal fa-envelope"></i> info@msalvati.com</a>
+                        <a href = "#"><i class="fab fa-linkedin-in"></i> LinkedIn</a>
+                        <a href = "#"><i class="fab fa-github-square"></i> GitHub</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row copyright justify-content-center">
+            <div class="text-muted">© Michael Salvati <span id="copyDate"></span></div>
+        </div>
+    </footer> -->
+
+
 
 </body>
 
