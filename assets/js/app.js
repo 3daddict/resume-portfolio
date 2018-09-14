@@ -100,9 +100,9 @@ $(function () {
     function Particle() {
         //using hsl is easier when we need particles with similar colors
         this.h = parseInt(0);
-        this.s = parseInt(0 * Math.random() + 30);
+        this.s = parseInt(0 * Math.random() + 10);
         this.l = parseInt(93 * Math.random() + 30);
-        this.a = 0.5 * Math.random();
+        this.a = 0.65 * Math.random();
 
         this.color = "hsla(" + this.h + "," + this.s + "%," + this.l + "%," + (this.a) + ")";
         this.shadowcolor = "hsla(" + this.h + "," + this.s + "%," + this.l + "%," + parseFloat(this.a - 0.55) + ")";

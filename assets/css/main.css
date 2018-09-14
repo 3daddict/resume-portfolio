@@ -49,7 +49,7 @@ body,
 
 .cover {
     padding: 1.5rem 1.5rem 2.0rem 1.5rem;
-    background-color: rgba(30, 30, 30, 0.25);
+    background-color: rgba(30, 30, 30, 0.3);
 }
 
 .cover .btn-lg {
@@ -85,7 +85,7 @@ body,
     border: 2px solid #EEE;
     border-radius: 50%;
     margin: auto 20px;
-    background-color: rgba(30, 30, 30, 0.5);
+    background-color: rgba(30, 30, 30, 0.6);
 }
 .learn-circle:hover, .learn-circle:active, .learn-circle:focus {
     color: rgb(255, 193, 7);
@@ -159,6 +159,7 @@ a:hover {
     font-weight: 300;
     line-height: 1;
     letter-spacing: -.05rem;
+    margin-top: 2rem;
     margin-bottom: 25px;
 }
 
@@ -230,19 +231,6 @@ a:hover {
 /* ===================================================================
  * # skills
  * ------------------------------------------------------------------- */
-section.s-skills {
-    padding-top: 12rem;
-    padding-bottom: 16rem;
-    background-color: #e6e6e6;
-    color: #757575;
-    position: relative;
-}
-
-section.s-skills>div.skills-outer {
-    margin-top: 3.6rem;
-    text-align: center;
-    position: relative;
-}
 
 .skillContainer {
     display: inline-flex;
@@ -346,7 +334,7 @@ section.s-skills>div.skills-outer {
 
     .h2-heading {
         font-size: 30px;
-        margin-top: 2rem;
+        margin-top: 2.5rem;
     }
 }
 
@@ -354,13 +342,13 @@ section.s-skills>div.skills-outer {
 
     .h2-heading {
         font-size: 50px;
-        margin-top: 2rem;
+        margin-top: 2.5rem;
     }
 }
 
 @media (min-width: 62em) {
     .h2-heading {
-        margin-top: 2rem;
+        margin-top: 2.5rem;
     }
 }
 
@@ -373,7 +361,7 @@ section.s-skills>div.skills-outer {
 
 @media (min-width: 62em) {
     .featurette-heading {
-        margin-top: 7rem;
+        margin-top: 2.5rem;
     }
 }
 
@@ -382,9 +370,6 @@ section.s-skills>div.skills-outer {
  * skills
  * ------------------------------------------------------------------- */
  @media only screen and (max-width: 1200px) {
-    section.s-skills {
-        padding-bottom: 12rem;
-    }
 
     .skillContainer {
         margin-top: 1rem;
@@ -408,9 +393,6 @@ section.s-skills>div.skills-outer {
 }
 
 @media only screen and (max-width: 600px) {
-    section.s-skills {
-        padding-bottom: 10rem;
-    }
 
     .skillContainer {
         margin-top: 0.5rem;
@@ -456,36 +438,3 @@ section.s-skills>div.skills-outer {
     }
 
 }
-
-
-@-webkit-keyframes bubbles {
-    0% {
-      opacity: 0;
-    }
-    20% {
-      opacity: 1;
-      -webkit-transform: translate(0, -20%);
-              transform: translate(0, -20%);
-    }
-    100% {
-      opacity: 0;
-      -webkit-transform: translate(0, -1000%);
-              transform: translate(0, -1000%);
-    }
-  }
-  
-  @keyframes bubbles {
-    0% {
-      opacity: 0;
-    }
-    20% {
-      opacity: 1;
-      -webkit-transform: translate(0, -20%);
-              transform: translate(0, -20%);
-    }
-    100% {
-      opacity: 0;
-      -webkit-transform: translate(0, -1000%);
-              transform: translate(0, -1000%);
-    }
-  }
