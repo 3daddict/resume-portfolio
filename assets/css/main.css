@@ -5,7 +5,8 @@ html,
 body,
 .hero {
     height: 100%;
-    width: 100%
+    width: 100%;
+    overflow: none;
 }
 
 .hero {
@@ -18,8 +19,13 @@ body,
     background-color: #333;
     text-shadow: 0 .05rem .1rem rgba(0, 0, 0, .5);
     box-shadow: inset 0 0 35rem rgba(0, 0, 0, .5);
-    background-size: 110%;
+    /* background-size: 110%; */
+    height: 100%;
     animation: panning 50s infinite linear;
+}
+
+#canvas {
+    position: absolute;
 }
 
 /* PANNING EFFECT */
@@ -98,7 +104,7 @@ body,
 }
 
 .learn-circle:hover .icon {
-    transform: translateY(-2px) rotate(45deg) ;
+    transform: translateY(-2px) rotate(25deg) ;
 }
 
 /* Links */
@@ -450,3 +456,36 @@ section.s-skills>div.skills-outer {
     }
 
 }
+
+
+@-webkit-keyframes bubbles {
+    0% {
+      opacity: 0;
+    }
+    20% {
+      opacity: 1;
+      -webkit-transform: translate(0, -20%);
+              transform: translate(0, -20%);
+    }
+    100% {
+      opacity: 0;
+      -webkit-transform: translate(0, -1000%);
+              transform: translate(0, -1000%);
+    }
+  }
+  
+  @keyframes bubbles {
+    0% {
+      opacity: 0;
+    }
+    20% {
+      opacity: 1;
+      -webkit-transform: translate(0, -20%);
+              transform: translate(0, -20%);
+    }
+    100% {
+      opacity: 0;
+      -webkit-transform: translate(0, -1000%);
+              transform: translate(0, -1000%);
+    }
+  }
