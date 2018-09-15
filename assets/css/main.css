@@ -446,16 +446,22 @@ a:hover {
  * featurette card animation
  * ------------------------------------------------------------------- */
 
- .portfolio-card-right {
+ .hidden {
+    visibility: hidden;
+ }
+
+ .animate-right {
     animation: 1s ease-out 0s 1 rightSlide;
+    visibility: visible;
   }
 
-  .portfolio-card-left {
+  .animate-left {
     animation: 1s ease-out 0s 1 leftSlide;
+    visibility: visible;
   }
 @keyframes rightSlide {
     0% {
-      transform: translateX(-200%);
+      transform: translateX(-110%);
     }
     100% {
       transform: translateX(0);
@@ -464,7 +470,7 @@ a:hover {
 
   @keyframes leftSlide {
     0% {
-      transform: translateX(200%);
+      transform: translateX(110%);
     }
     100% {
       transform: translateX(0);
