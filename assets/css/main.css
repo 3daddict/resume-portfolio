@@ -274,6 +274,7 @@ a:hover {
     transform: translateY(-10px);
   }
 
+
   /* ===================================================================
  * # contact form
  * ------------------------------------------------------------------- */
@@ -439,3 +440,39 @@ a:hover {
     }
 
 }
+
+/* ------------------------------------------------------------------- 
+ * responsive:
+ * featurette card animation
+ * ------------------------------------------------------------------- */
+
+ .hidden {
+    visibility: hidden;
+ }
+
+ .animate-right {
+    animation: 1s ease-out 0s 1 rightSlide;
+    visibility: visible;
+  }
+
+  .animate-left {
+    animation: 1s ease-out 0s 1 leftSlide;
+    visibility: visible;
+  }
+@keyframes rightSlide {
+    0% {
+      transform: translateX(-110%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+
+  @keyframes leftSlide {
+    0% {
+      transform: translateX(110%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }

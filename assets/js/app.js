@@ -20,6 +20,33 @@ function copyrightYear() {
     $('#copyDate').text(new Date().getFullYear());
 }
 
+$(window).on('scroll', function () {
+    // console.log($(window).height());
+    scroll_pos = $(window).scrollTop() + $(window).height();
+    element_pos = $('.portfolio-card-right-1').offset().top + $('.portfolio-card-right-1').height();
+    if (scroll_pos > element_pos) {
+        $('.portfolio-card-right-1').addClass('animate-right');
+    };
+});
+
+$(window).on('scroll', function () {
+    // console.log($(window).height());
+    scroll_pos = $(window).scrollTop() + $(window).height();
+    element_pos = $('.portfolio-card-left').offset().top + $('.portfolio-card-left').height();
+    if (scroll_pos > element_pos) {
+        $('.portfolio-card-left').addClass('animate-left');
+    };
+});
+
+$(window).on('scroll', function () {
+    // console.log($(window).height());
+    scroll_pos = $(window).scrollTop() + $(window).height();
+    element_pos = $('.portfolio-card-right-2').offset().top + $('.portfolio-card-right-2').height();
+    if (scroll_pos > element_pos) {
+        $('.portfolio-card-right-2').addClass('animate-right');
+    };
+});
+
 $(function () {
     // init the validator
     // validator files are included in the download package
@@ -243,3 +270,4 @@ $(function () {
     };
 
 });
+
