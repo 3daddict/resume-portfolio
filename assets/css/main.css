@@ -6,42 +6,24 @@ body,
 .hero {
     height: 100%;
     width: 100%;
-    overflow: none;
 }
 
 .hero {
     position: relative;
     display: -ms-flexbox;
     display: flex;
-    background-image: url("../../images/portfolio-background.jpeg");
+    background-image: url("../../images/portfolio-background_comp.jpg");
     background-size: cover;
     color: #fff;
-    background-color: #333;
     text-shadow: 0 .05rem .1rem rgba(0, 0, 0, .5);
     box-shadow: inset 0 0 35rem rgba(0, 0, 0, .5);
-    /* background-size: 110%; */
-    height: 100%;
-    animation: panning 50s infinite linear;
+    background-position: center center;
+    background-repeat:no-repeat;
 }
 
 #canvas {
     position: absolute;
     width: 100%;
-}
-
-/* PANNING EFFECT */
-@keyframes panning {
-    0% {
-        background-position: 0% 0%;
-    }
-
-    100% {
-        background-position: 100% 0%;
-    }
-
-    0% {
-        background-position: 0% 0%;
-    }
 }
 
 .cover-container {
