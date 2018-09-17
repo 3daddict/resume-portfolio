@@ -1,22 +1,32 @@
 $(document).ready(initializePortfolio)
 
 function initializePortfolio() {
-    carouselRotation() //run the carousel ratation
-    copyrightYear() //update copyright date
     navScrollSpyOffset() //ScrollSpy Offset
-
+    letItSnow() //particle effect on hero background
+    carouselRotation() //run the carousel ratation
+    formValidation() //contact form validation
+    copyrightYear() //update copyright date
 }
 
+/**
+ * function reserved to handle click calls
+ */
 function clickHandler() {
 
 }
 
+/**
+ * function for recommendation carousel rotation
+ */
 function carouselRotation() {
     $('.carousel').carousel({
         interval: 10000
     })
 }
 
+/**
+ * function for scrollspy offset on bootstrap 4 navbar
+ */
 function navScrollSpyOffset(){
     var offset = 50;
     $('.nav-link').click(function(event) {
@@ -27,10 +37,14 @@ function navScrollSpyOffset(){
     });
 }
 
+/**
+ * function for copyright year auto update
+ */
 function copyrightYear() {
     $('#copyDate').text(new Date().getFullYear());
 }
 
+//DECONSRUCT AND RECODE THE WINDOW FUNCTIONS BELOW
 $(window).on('scroll', function () {
     // console.log($(window).height());
     scroll_pos = $(window).scrollTop() + $(window).height();
@@ -58,10 +72,10 @@ $(window).on('scroll', function () {
     };
 });
 
-$(function () {
-    // init the validator
-    // validator files are included in the download package
-    // otherwise download from http://1000hz.github.io/bootstrap-validator
+/**
+ * function for form validation in contact section
+ */
+function formValidation() {
     $('#contact-form').validator();
     // when the form is submitted
     $('#contact-form').on('submit', function (e) {
@@ -92,10 +106,10 @@ $(function () {
             return false;
         }
     })
-});
+};
 
 
-$(function () {
+function letItSnow() {
     var W, H,
         canvas, ctx, //ctx stands for context and is the "curso" of our canvas element.
         particleCount = 700,
@@ -280,5 +294,5 @@ $(function () {
 
     };
 
-});
+};
 
