@@ -25,22 +25,22 @@
     <script src="./assets/js/app.js" type="text/javascript"></script>
 </head>
 
-<body>
+<body data-spy="scroll" data-target=".nav" data-offset="50">
 
-    <section class="hero text-center">
+    <section class="hero text-center"  id="home">
         <canvas id="canvas"></canvas>
         <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
             <header class="masthead mb-auto">
                 <div class="inner">
-                    <h3 class="masthead-brand">Michael Salvati</h3>
-                    <nav class="nav nav-masthead justify-content-center">
-                        <a class="nav-link active" href="#">Home</a>
-                        <a class="nav-link" href="#">About</a>
-                        <a class="nav-link" href="#">Applications</a>
-                        <a class="nav-link" href="#">Skills</a>
-                        <a class="nav-link" href="#">Recommendations</a>
-                        <a class="nav-link" href="#">Contact</a>
-                        <a class="nav-link" href="#">Resume</a>
+                    <!-- <h3 class="masthead-brand">Michael Salvati</h3> -->
+                    <nav class="nav nav-masthead nav-tabs justify-content-center fixed-top" role="tablist"  id="main-navbar">
+                        <a class="nav-link active" href="#home">Home</a>
+                        <a class="nav-link" href="#about">About</a>
+                        <a class="nav-link" href="#apps">Applications</a>
+                        <a class="nav-link" href="#skills">Skills</a>
+                        <a class="nav-link" href="#sec-testimonials">Recommendations</a>
+                        <a class="nav-link" href="#contact">Contact</a>
+                        <a class="nav-link" href="#" target="_blank">Resume</a>
                     </nav>
                 </div>
             </header>
@@ -68,7 +68,7 @@
             <div class="mt-auto"></div>
     </section>
 
-    <section class="about-container">
+    <section class="about-container" id="about">
         <h2 class="h2-heading text-center">About <span class="text-muted">Me</span></h2>
         <div class="row text-center">
             <p class="lead">Working with both front and back end web development including <strong>HTML5, CSS3,
@@ -101,7 +101,7 @@
         </div>
     </section>
 
-    <section class="featurette-container">
+    <section class="featurette-container" id="apps">
         <h1 class="h2-heading text-center">Applications</h1>
         <hr class="featurette-divider">
 
@@ -163,7 +163,7 @@
 
     <hr class="featurette-divider">
 
-    <section class="skills-container">
+    <section class="skills-container" id="skills">
         <h2 class="h2-heading text-center">Skills</h2>
         <div class="row">
             <div class="col-12 text-center">
@@ -365,7 +365,7 @@
 
     <hr class="featurette-divider">
 
-    <section class="contact-form container">
+    <section class="contact-form container" id="contact">
         <div class="connatiner">
             <h2 class="h2-heading text-center">Contact <span class="text-muted">Me</span></h2>
             <h4>Let’s connect!</h4>

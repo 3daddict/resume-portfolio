@@ -3,6 +3,7 @@ $(document).ready(initializePortfolio)
 function initializePortfolio() {
     carouselRotation() //run the carousel ratation
     copyrightYear() //update copyright date
+    navScrollSpyOffset() //ScrollSpy Offset
 
 }
 
@@ -14,6 +15,16 @@ function carouselRotation() {
     $('.carousel').carousel({
         interval: 10000
     })
+}
+
+function navScrollSpyOffset(){
+    var offset = 50;
+    $('.nav-link').click(function(event) {
+        console.log('Scroll Offset')
+        event.preventDefault();
+        $($(this).attr('href'))[0].scrollIntoView();
+        scrollBy(0, -offset);
+    });
 }
 
 function copyrightYear() {
@@ -99,7 +110,7 @@ $(function () {
 
     ctx = canvas.getContext("2d"); // settng the context to 2d rather than the 3d WEBGL
     ctx.globalCompositeOperation = "lighter";
-    console.log(ctx);
+    // console.log(ctx);
     var mouse = {
         x: 0,
         y: 0,
