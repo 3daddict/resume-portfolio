@@ -27,13 +27,13 @@
 
 <body data-spy="scroll" data-target=".nav" data-offset="50">
 
-    <section class="hero text-center"  id="home">
+    <section class="hero text-center" id="home">
         <canvas id="canvas"></canvas>
         <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
             <header class="masthead mb-auto">
                 <div class="inner">
                     <!-- <h3 class="masthead-brand">Michael Salvati</h3> -->
-                    <nav class="nav nav-masthead justify-content-center fixed-top" role="tablist"  id="main-navbar">
+                    <nav class="nav nav-masthead justify-content-center fixed-top" role="tablist" id="main-navbar">
                         <a class="nav-link active" href="#home">Home</a>
                         <a class="nav-link" href="#about">About</a>
                         <a class="nav-link" href="#apps">Applications</a>
@@ -114,9 +114,17 @@
                     <strong>Front-End, UI/UX and Agile Product Management</strong>. This web application was built with
                     PHP, HTML5, CSS3 and Bootstrap with custom styling. It is fully responsive for desktop, laptops,
                     tablets and mobile.</p>
-                <div class="link-btn-container">
-                    <a class="btn btn-warning" a href="https://oneclicksolar.com" target="_blank"><i class="fal fa-external-link"></i>
-                        Live Link</a>
+                <div class="row align-items-center">
+                    <div class="col">
+                        <a class="btn btn-warning tech-btn" href="https://oneclicksolar.com" target="_blank" role="button"><i class="fal fa-external-link"></i> Live Link</a>
+                    </div>
+                    <div class="col text-center tech-used-container">
+                        <span class="tech-used"><i class="fab fa-php"></i></span>
+                        <span class="tech-used"><i class="fab fa-html5"></i></span>
+                        <span class="tech-used"><i class="fab fa-css3-alt"></i></span>
+                        <span class="tech-used"></span>
+                        <p class="tech-used-text">Featured Technology:</p>
+                    </div>
                 </div>
             </div>
             <div class="col-md-5 my-auto">
@@ -407,7 +415,8 @@
                         </div>
                     </div>
                     <div class="col-md-12">
-                        <input type="submit" class="btn btn-success btn-send" value="Send message">
+                        <button type="submit" class="btn btn-primary btn-send" value="Send message">Send Message <i
+                                class="fal fa-rocket"></i></button>
                     </div>
                 </div>
                 <div class="row">
@@ -465,8 +474,8 @@
                     </div>
                 </div>
             </div>
-        <div class="text-muted text-center">© Michael Salvati <span id="copyDate"></span></div>
-    </section>
+            <div class="text-muted text-center">© Michael Salvati <span id="copyDate"></span></div>
+        </section>
     </footer>
 
 </body>

@@ -173,8 +173,24 @@ a:hover {
     letter-spacing: -.05rem;
 }
 
-.link-btn-container {
-    margin-bottom: 25px;
+.tech-used-container {
+    position: relative;
+}
+
+.tech-used-text {
+    position: absolute;
+    top: -5px;
+    left: -10px;
+    font-size: 0.7em;
+}
+
+.tech-used {
+    font-size: 2em;
+    color: rgba(30, 30, 30, 0.5);
+}
+
+.tech-used:hover {
+    color: #007bff;
 }
 
 /* ===================================================================
