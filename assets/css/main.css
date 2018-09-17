@@ -1,3 +1,7 @@
+body {
+    position: relative;
+}
+
 /* ===================================================================
  * # hero
  * ------------------------------------------------------------------- */
@@ -100,7 +104,10 @@ a:hover {
 /* ===================================================================
  * # navbar
  * ------------------------------------------------------------------- */
-.nav-masthead .nav-link {
+.nav-masthead {
+    background-color: #007bff;
+}
+ .nav-masthead .nav-link {
     padding: .25rem 0;
     font-weight: 700;
     color: rgba(255, 255, 255, .5);
@@ -108,18 +115,17 @@ a:hover {
     border-bottom: .25rem solid transparent;
 }
 
-.nav-masthead .nav-link:hover,
-.nav-masthead .nav-link:focus {
-    border-bottom-color: rgba(255, 255, 255, .25);
+.nav-masthead .nav-link:hover {
+    color: #FFF;
 }
 
 .nav-masthead .nav-link+.nav-link {
     margin-left: 1rem;
 }
 
-.nav-masthead .active {
-    color: #fff;
-    border-bottom-color: #fff;
+.nav-masthead .active,
+.nav-masthead .nav-link:focus {
+    color: rgb(255, 193, 7);
 }
 
 .learn-btn {
@@ -433,12 +439,12 @@ a:hover {
  }
 
  .animate-right {
-    animation: 1s ease-out 0s 1 rightSlide;
+    animation: 0.5s ease-out 0s 1 rightSlide;
     visibility: visible;
   }
 
   .animate-left {
-    animation: 1s ease-out 0s 1 leftSlide;
+    animation: 0.5s ease-out 0s 1 leftSlide;
     visibility: visible;
   }
 @keyframes rightSlide {
