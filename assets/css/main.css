@@ -1,3 +1,7 @@
+body {
+    position: relative;
+}
+
 /* ===================================================================
  * # hero
  * ------------------------------------------------------------------- */
@@ -6,42 +10,24 @@ body,
 .hero {
     height: 100%;
     width: 100%;
-    overflow: none;
 }
 
 .hero {
     position: relative;
     display: -ms-flexbox;
     display: flex;
-    background-image: url("../../images/portfolio-background.jpeg");
+    background-image: url("../../images/portfolio-background_comp.jpg");
     background-size: cover;
     color: #fff;
-    background-color: #333;
     text-shadow: 0 .05rem .1rem rgba(0, 0, 0, .5);
     box-shadow: inset 0 0 35rem rgba(0, 0, 0, .5);
-    /* background-size: 110%; */
-    height: 100%;
-    animation: panning 50s infinite linear;
+    background-position: center center;
+    background-repeat:no-repeat;
 }
 
 #canvas {
     position: absolute;
     width: 100%;
-}
-
-/* PANNING EFFECT */
-@keyframes panning {
-    0% {
-        background-position: 0% 0%;
-    }
-
-    100% {
-        background-position: 100% 0%;
-    }
-
-    0% {
-        background-position: 0% 0%;
-    }
 }
 
 .cover-container {
@@ -118,7 +104,10 @@ a:hover {
 /* ===================================================================
  * # navbar
  * ------------------------------------------------------------------- */
-.nav-masthead .nav-link {
+.nav-masthead {
+    background-color: #007bff;
+}
+ .nav-masthead .nav-link {
     padding: .25rem 0;
     font-weight: 700;
     color: rgba(255, 255, 255, .5);
@@ -126,18 +115,17 @@ a:hover {
     border-bottom: .25rem solid transparent;
 }
 
-.nav-masthead .nav-link:hover,
-.nav-masthead .nav-link:focus {
-    border-bottom-color: rgba(255, 255, 255, .25);
+.nav-masthead .nav-link:hover {
+    color: #FFF;
 }
 
 .nav-masthead .nav-link+.nav-link {
     margin-left: 1rem;
 }
 
-.nav-masthead .active {
-    color: #fff;
-    border-bottom-color: #fff;
+.nav-masthead .active,
+.nav-masthead .nav-link:focus {
+    color: rgb(255, 193, 7);
 }
 
 .learn-btn {
@@ -185,8 +173,24 @@ a:hover {
     letter-spacing: -.05rem;
 }
 
-.link-btn-container {
-    margin-bottom: 25px;
+.tech-used-container {
+    position: relative;
+}
+
+.tech-used-text {
+    position: absolute;
+    top: -5px;
+    left: -10px;
+    font-size: 0.7em;
+}
+
+.tech-used {
+    font-size: 2em;
+    color: rgba(30, 30, 30, 0.5);
+}
+
+.tech-used:hover {
+    color: #007bff;
 }
 
 /* ===================================================================
@@ -451,12 +455,12 @@ a:hover {
  }
 
  .animate-right {
-    animation: 1s ease-out 0s 1 rightSlide;
+    animation: 0.5s ease-out 0s 1 rightSlide;
     visibility: visible;
   }
 
   .animate-left {
-    animation: 1s ease-out 0s 1 leftSlide;
+    animation: 0.5s ease-out 0s 1 leftSlide;
     visibility: visible;
   }
 @keyframes rightSlide {
