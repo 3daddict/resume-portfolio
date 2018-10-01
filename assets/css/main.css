@@ -91,7 +91,7 @@ body,
 }
 
 .learn-circle:hover .icon {
-    transform: translateY(-2px) rotate(25deg) ;
+    transform: scale(1.4);
 }
 
 /* Links */
@@ -105,7 +105,7 @@ a:hover {
  * # navbar
  * ------------------------------------------------------------------- */
 .nav-masthead {
-    background-color: #007bff;
+    background-color: #2d9ee0;
 }
  .nav-masthead .nav-link {
     padding: .25rem 0;
@@ -129,8 +129,20 @@ a:hover {
 }
 
 .learn-btn {
-    background-color: rgba(30, 30, 30, 0.25);
-    
+    background-color: rgba(30, 30, 30, 0.25);  
+}
+
+.resume-link {
+    margin-left: 1rem;
+    padding: .25rem 0;
+    font-weight: 700;
+    color: #EEE;
+    background-color: transparent;
+    border-bottom: .25rem solid transparent;
+}
+
+.resume-link:link {
+    text-decoration: none;
 }
 
 /* ===================================================================
@@ -204,7 +216,11 @@ a:hover {
 /* ===================================================================
  * # carousel
  * ------------------------------------------------------------------- */
-.carousel-indicators {
+ .carousel-inner{
+     min-height: 250px;
+ }
+
+ .carousel-indicators {
     bottom: -30px;
 }
 
@@ -291,7 +307,7 @@ a:hover {
  * # footer
  * ------------------------------------------------------------------- */
   .footer-bar{
-      background-color: #007bff;
+      background-color: #2d9ee0;
       color: #EEE;
       font-size: 1.5em;
   }
@@ -480,3 +496,34 @@ a:hover {
       transform: translateX(0);
     }
   }
+
+
+/* ------------------------------------------------------------------- 
+ * responsive:
+ * testimonial responsiveness
+ * ------------------------------------------------------------------- */
+
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) {
+
+    .carousel-inner{
+        min-height: 415px;
+    } 
+}
+
+@media only screen 
+and (min-width : 1224px) {
+
+    .carousel-inner{
+        min-height: 350px;
+    }
+}
+
+@media only screen 
+and (min-width : 1824px) {
+
+    .carousel-inner{
+        min-height: 250px;
+    }
+}
