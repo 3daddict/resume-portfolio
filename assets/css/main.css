@@ -1,3 +1,7 @@
+body {
+    position: relative;
+}
+
 /* ===================================================================
  * # hero
  * ------------------------------------------------------------------- */
@@ -5,36 +9,25 @@ html,
 body,
 .hero {
     height: 100%;
-    width: 100%
+    width: 100%;
 }
 
 .hero {
     position: relative;
     display: -ms-flexbox;
     display: flex;
-    background-image: url("../../images/portfolio-background.jpeg");
+    background-image: url("../../images/portfolio-background_comp.jpg");
     background-size: cover;
     color: #fff;
-    background-color: #333;
     text-shadow: 0 .05rem .1rem rgba(0, 0, 0, .5);
     box-shadow: inset 0 0 35rem rgba(0, 0, 0, .5);
-    min-height: 100%;
-    animation: panning 50s infinite linear;
+    background-position: center center;
+    background-repeat:no-repeat;
 }
 
-/* PANNING EFFECT */
-@keyframes panning {
-    0% {
-        background-position: 0% 0%;
-    }
-
-    100% {
-        background-position: 100% 0%;
-    }
-
-    0% {
-        background-position: 0% 0%;
-    }
+#canvas {
+    position: absolute;
+    width: 100%;
 }
 
 .cover-container {
@@ -43,7 +36,7 @@ body,
 
 .cover {
     padding: 1.5rem 1.5rem 2.0rem 1.5rem;
-    background-color: rgba(30, 30, 30, 0.25);
+    background-color: rgba(30, 30, 30, 0.3);
 }
 
 .cover .btn-lg {
@@ -79,6 +72,7 @@ body,
     border: 2px solid #EEE;
     border-radius: 50%;
     margin: auto 20px;
+    background-color: rgba(30, 30, 30, 0.6);
 }
 .learn-circle:hover, .learn-circle:active, .learn-circle:focus {
     color: rgb(255, 193, 7);
@@ -97,7 +91,7 @@ body,
 }
 
 .learn-circle:hover .icon {
-    transform: translateY(-2px) rotate(45deg) ;
+    transform: scale(1.4);
 }
 
 /* Links */
@@ -110,7 +104,10 @@ a:hover {
 /* ===================================================================
  * # navbar
  * ------------------------------------------------------------------- */
-.nav-masthead .nav-link {
+.nav-masthead {
+    background-color: #2d9ee0;
+}
+ .nav-masthead .nav-link {
     padding: .25rem 0;
     font-weight: 700;
     color: rgba(255, 255, 255, .5);
@@ -118,23 +115,34 @@ a:hover {
     border-bottom: .25rem solid transparent;
 }
 
-.nav-masthead .nav-link:hover,
-.nav-masthead .nav-link:focus {
-    border-bottom-color: rgba(255, 255, 255, .25);
+.nav-masthead .nav-link:hover {
+    color: #FFF;
 }
 
 .nav-masthead .nav-link+.nav-link {
     margin-left: 1rem;
 }
 
-.nav-masthead .active {
-    color: #fff;
-    border-bottom-color: #fff;
+.nav-masthead .active,
+.nav-masthead .nav-link:focus {
+    color: rgb(255, 193, 7);
 }
 
 .learn-btn {
-    background-color: rgba(30, 30, 30, 0.25);
-    
+    background-color: rgba(30, 30, 30, 0.25);  
+}
+
+.resume-link {
+    margin-left: 1rem;
+    padding: .25rem 0;
+    font-weight: 700;
+    color: #EEE;
+    background-color: transparent;
+    border-bottom: .25rem solid transparent;
+}
+
+.resume-link:link {
+    text-decoration: none;
 }
 
 /* ===================================================================
@@ -142,8 +150,8 @@ a:hover {
  * ------------------------------------------------------------------- */
 .about-container {
     width: 100%;
-    padding-right: 15%;
-    padding-left: 15%;
+    padding-right: 10%;
+    padding-left: 10%;
     margin-right: auto;
     margin-left: auto;
 }
@@ -152,6 +160,7 @@ a:hover {
     font-weight: 300;
     line-height: 1;
     letter-spacing: -.05rem;
+    margin-top: 2rem;
     margin-bottom: 25px;
 }
 
@@ -176,8 +185,24 @@ a:hover {
     letter-spacing: -.05rem;
 }
 
-.link-btn-container {
-    margin-bottom: 25px;
+.tech-used-container {
+    position: relative;
+}
+
+.tech-used-text {
+    position: absolute;
+    top: -5px;
+    left: -10px;
+    font-size: 0.7em;
+}
+
+.tech-used {
+    font-size: 2em;
+    color: rgba(30, 30, 30, 0.5);
+}
+
+.tech-used:hover {
+    color: #007bff;
 }
 
 /* ===================================================================
@@ -191,7 +216,11 @@ a:hover {
 /* ===================================================================
  * # carousel
  * ------------------------------------------------------------------- */
-.carousel-indicators {
+ .carousel-inner{
+     min-height: 250px;
+ }
+
+ .carousel-indicators {
     bottom: -30px;
 }
 
@@ -223,20 +252,6 @@ a:hover {
 /* ===================================================================
  * # skills
  * ------------------------------------------------------------------- */
-section.s-skills {
-    padding-top: 12rem;
-    padding-bottom: 16rem;
-    background-color: #e6e6e6;
-    color: #757575;
-    position: relative;
-}
-
-section.s-skills>div.skills-outer {
-    margin-top: 3.6rem;
-    /* padding-bottom: 9rem; */
-    text-align: center;
-    position: relative;
-}
 
 .skillContainer {
     display: inline-flex;
@@ -244,19 +259,20 @@ section.s-skills>div.skills-outer {
     flex-wrap: wrap;
     margin-top: 1rem;
     padding-bottom: 1rem;
-    justify-content: center;
+    font-size: 1.2rem;
 }
 
 .skillIconContainer {
-    height: 6rem;
-    width: 6rem;
+    height: 5rem;
+    width: 5rem;
+    text-align: center;
     display: inline-block;
-    margin: 38px;
+    margin: 25px;
 }
 
 .skillIconContainer img {
-    height: 100%;
-    width: 100%;
+    height: 4rem;
+    width: 4rem;
 }
 
 /* Float */
@@ -274,23 +290,24 @@ section.s-skills>div.skills-outer {
     transition-timing-function: ease-out;
   }
   .skill-float:hover, .skill-float:focus, .skill-float:active {
-    -webkit-transform: translateY(-8px);
-    transform: translateY(-8px);
+    -webkit-transform: translateY(-10px);
+    transform: translateY(-10px);
   }
+
 
   /* ===================================================================
  * # contact form
  * ------------------------------------------------------------------- */
 
   .contact-form{
-    margin-bottom: 25px;
+    margin-bottom: 50px;
   }
 
   /* ===================================================================
  * # footer
  * ------------------------------------------------------------------- */
   .footer-bar{
-      background-color: #007bff;
+      background-color: #2d9ee0;
       color: #EEE;
       font-size: 1.5em;
   }
@@ -298,6 +315,9 @@ section.s-skills>div.skills-outer {
   .footer-sm-icon{
       margin: auto 2%;
   }
+  .footer-sm-icon:hover{
+    color: rgb(255, 193, 7);
+}
 
   .footer-main-content{
       background-color: #333;
@@ -336,7 +356,7 @@ section.s-skills>div.skills-outer {
 
     .h2-heading {
         font-size: 30px;
-        margin-top: 2rem;
+        margin-top: 2.5rem;
     }
 }
 
@@ -344,13 +364,13 @@ section.s-skills>div.skills-outer {
 
     .h2-heading {
         font-size: 50px;
-        margin-top: 2rem;
+        margin-top: 2.5rem;
     }
 }
 
 @media (min-width: 62em) {
     .h2-heading {
-        margin-top: 2rem;
+        margin-top: 2.5rem;
     }
 }
 
@@ -363,7 +383,7 @@ section.s-skills>div.skills-outer {
 
 @media (min-width: 62em) {
     .featurette-heading {
-        margin-top: 7rem;
+        margin-top: 2.5rem;
     }
 }
 
@@ -371,54 +391,7 @@ section.s-skills>div.skills-outer {
  * responsive:
  * skills
  * ------------------------------------------------------------------- */
-@media only screen and (max-width: 1200px) {
-    section.s-skills {
-        padding-bottom: 14rem;
-    }
-
-    .skillContainer {
-        margin-top: 3rem;
-    }
-
-    .skillIconContainer {
-        height: 6rem;
-        width: 6rem;
-        display: inline-block;
-        margin: 30px;
-    }
-
-    .skillIconContainer p {
-        font-size: 1.2rem;
-    }
-}
-
-
-@media only screen and (max-width: 1000px) {
-    section.s-skills {
-        padding-bottom: 12rem;
-    }
-
-    .skillContainer {
-        margin: 2rem;
-    }
-
-    .skillIconContainer {
-        height: 6rem;
-        width: 6rem;
-        display: inline-block;
-        margin: 30px;
-    }
-
-    .skillIconContainer p {
-        font-size: 1rem;
-    }
-
-}
-
-@media only screen and (max-width: 800px) {
-    section.s-skills {
-        padding-bottom: 8rem;
-    }
+ @media only screen and (max-width: 1200px) {
 
     .skillContainer {
         margin-top: 1rem;
@@ -431,48 +404,126 @@ section.s-skills>div.skills-outer {
         margin: 30px;
     }
 
+    .skillIconContainer img {
+        height: 4rem;
+        width: 4rem;
+    }
+
     .skillIconContainer p {
-        font-size: 1.1rem;
+        font-size: 1.2rem;
     }
 }
 
 @media only screen and (max-width: 600px) {
-    section.s-skills {
-        padding-top: 12rem;
-        padding-bottom: 4rem;
-    }
 
     .skillContainer {
         margin-top: 0.5rem;
     }
 
     .skillIconContainer {
-        height: 5rem;
-        width: 5rem;
+        height: 4.5rem;
+        width: 4.5rem;
         display: inline-block;
-        margin: 24px;
+        margin: 25px;
+    }
+
+    .skillIconContainer img {
+        height: 3.5rem;
+        width: 3.5rem;
     }
 
     .skillIconContainer p {
-        font-size: 1rem;
+        font-size: 1.0rem;
     }
 
 }
 
 @media only screen and (max-width: 400px) {
     .skillContainer {
-        margin-top: 0.05rem;
+        margin-top: 0.5rem;
     }
 
     .skillIconContainer {
-        height: 5rem;
-        width: 5rem;
+        height: 4rem;
+        width: 4rem;
         display: inline-block;
-        margin: 30px;
+        margin: 20px;
+    }
+
+    .skillIconContainer img {
+        height: 3rem;
+        width: 3rem;
     }
 
     .skillIconContainer p {
-        font-size: 1rem;
+        font-size: 0.8rem;
     }
 
+}
+
+/* ------------------------------------------------------------------- 
+ * responsive:
+ * featurette card animation
+ * ------------------------------------------------------------------- */
+
+ .hidden {
+    visibility: hidden;
+ }
+
+ .animate-right {
+    animation: 0.5s ease-out 0s 1 rightSlide;
+    visibility: visible;
+  }
+
+  .animate-left {
+    animation: 0.5s ease-out 0s 1 leftSlide;
+    visibility: visible;
+  }
+@keyframes rightSlide {
+    0% {
+      transform: translateX(-110%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+
+  @keyframes leftSlide {
+    0% {
+      transform: translateX(110%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+
+
+/* ------------------------------------------------------------------- 
+ * responsive:
+ * testimonial responsiveness
+ * ------------------------------------------------------------------- */
+
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) {
+
+    .carousel-inner{
+        min-height: 415px;
+    } 
+}
+
+@media only screen 
+and (min-width : 1224px) {
+
+    .carousel-inner{
+        min-height: 350px;
+    }
+}
+
+@media only screen 
+and (min-width : 1824px) {
+
+    .carousel-inner{
+        min-height: 250px;
+    }
 }
