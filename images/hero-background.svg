@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1440px" height="820px" viewBox="0 0 1440 820" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.1 (51147) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 47</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="43.1331936%" y1="1.14013346%" x2="53.99234%" y2="82.1042381%" id="linearGradient-1">
+            <stop stop-color="#0073FD" offset="0%"></stop>
+            <stop stop-color="#1062C4" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="54.7735343%" y1="88.3233313%" x2="51.7865111%" y2="1.39465487%" id="linearGradient-2">
+            <stop stop-color="#3E8DEB" offset="0%"></stop>
+            <stop stop-color="#1062C4" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop-Copy">
+            <g id="Group-47" transform="translate(-151.000000, -42.000000)">
+                <path d="M151,813.390625 L1615.85453,5 C1626.71516,406.749769 1626.71516,631.171394 1615.85453,678.264874 C1336.8696,678.264874 1074.50291,708.218541 866.452588,754.602748 C658.402266,800.986954 349.656274,861.820312 151,861.820312 C18.5624843,861.820312 18.5624843,845.677083 151,813.390625 Z" id="Path-2" fill="url(#linearGradient-1)" style="mix-blend-mode: multiply;" opacity="0.100000001"></path>
+                <path d="M94.0172817,0 L1630,4.75429068 C1618.3482,360.21069 1607.089,561.470106 1596.2224,608.532538 C1317.08414,608.532538 1096.79168,712.535258 866.904224,753.862834 C637.01677,795.190411 299.980916,812 101.215459,812 C-31.2948464,812 -33.6942387,541.333333 94.0172817,0 Z" id="Path-2-Copy" fill="url(#linearGradient-2)"></path>
+            </g>
+        </g>
+    </g>
+</svg>
