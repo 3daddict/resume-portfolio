@@ -14,12 +14,10 @@ body,
 
 .hero {
     position: relative;
-    display: -ms-flexbox;
     display: flex;
-    background-image: url("../../images/portfolio-background_comp.jpg");
+    background-image: url("../../images/code-background.jpeg");
     background-size: cover;
     color: #fff;
-    text-shadow: 0 .05rem .1rem rgba(0, 0, 0, .5);
     box-shadow: inset 0 0 35rem rgba(0, 0, 0, .5);
     background-position: center center;
     background-repeat:no-repeat;
@@ -36,7 +34,8 @@ body,
 
 .cover {
     padding: 1.5rem 1.5rem 2.0rem 1.5rem;
-    background-color: rgba(30, 30, 30, 0.3);
+    text-shadow: 0 .05rem .1rem rgba(0, 0, 0, .5);
+    background-color: rgba(30, 30, 30, 0.5);
 }
 
 .cover .btn-lg {
@@ -105,18 +104,17 @@ a:hover {
  * # navbar
  * ------------------------------------------------------------------- */
 .nav-masthead {
-    background-color: #2d9ee0;
+    background-color: rgba(255,255,255,0.97);
 }
  .nav-masthead .nav-link {
     padding: .25rem 0;
-    font-weight: 700;
-    color: rgba(255, 255, 255, .5);
-    background-color: transparent;
-    border-bottom: .25rem solid transparent;
+    color: rgb(146, 146, 146);
+    font-weight: 300;
+    text-decoration: none;
 }
 
 .nav-masthead .nav-link:hover {
-    color: #FFF;
+    color: #2d9ee0;
 }
 
 .nav-masthead .nav-link+.nav-link {
@@ -125,35 +123,21 @@ a:hover {
 
 .nav-masthead .active,
 .nav-masthead .nav-link:focus {
-    color: rgb(255, 193, 7);
+    color: rgb(37, 37, 37);
 }
 
 .learn-btn {
     background-color: rgba(30, 30, 30, 0.25);  
 }
 
-.resume-link {
-    margin-left: 1rem;
-    padding: .25rem 0;
-    font-weight: 700;
-    color: #EEE;
-    background-color: transparent;
-    border-bottom: .25rem solid transparent;
-}
-
-.resume-link:link {
-    text-decoration: none;
-}
-
 /* ===================================================================
  * # about
  * ------------------------------------------------------------------- */
 .about-container {
-    width: 100%;
-    padding-right: 10%;
-    padding-left: 10%;
-    margin-right: auto;
-    margin-left: auto;
+    color: #EEE;
+    background: url(../../images/Mike-Web-Banner-v1.png) center center no-repeat;
+    background-size: cover;
+    padding-bottom: 62px;
 }
 
 .h2-heading {
@@ -205,12 +189,21 @@ a:hover {
     color: #007bff;
 }
 
+.featurette-image {
+    max-width: 400px;
+    max-height: 400px;
+}
+
 /* ===================================================================
  * # testimonials
  * ------------------------------------------------------------------- */
 .sec-testimonials {
     padding-top: 25px;
-    margin-bottom: 100px;
+    margin: 0 6vw 100px;
+    background-color: #EEE;
+    padding-bottom: 50px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.3);
 }
 
 /* ===================================================================
@@ -237,21 +230,24 @@ a:hover {
     background: rgba(33, 33, 33, 0.75);
 }
 
-.carousel-control-next,
-.carousel-control-prev {
-    color: #212121;
-}
-
-.carousel-control-next:focus,
-.carousel-control-next:hover,
-.carousel-control-prev:focus,
-.carousel-control-prev:hover {
-    color: #111;
-}
-
 /* ===================================================================
  * # skills
  * ------------------------------------------------------------------- */
+.skills-container {
+    padding-bottom: 6vw;
+    width: 100vw;
+}
+
+.skills-heading {
+    margin-bottom: 0;
+    padding-top: 2vw;
+}
+
+.skills-p {
+    margin: 0;
+    padding-bottom: 2vw;
+    font-size: 1.2rem;
+}
 
 .skillContainer {
     display: inline-flex;
@@ -525,5 +521,18 @@ and (min-width : 1824px) {
 
     .carousel-inner{
         min-height: 250px;
+    }
+}
+
+/* ------------------------------------------------------------------- 
+ * responsive:
+ * Photo Background
+ * ------------------------------------------------------------------- */
+ @media only screen and (max-width: 770px) {
+    .about-container {
+        background: url(../../images/Mike-Web-Banner-Mobile.png) center center no-repeat;
+        background-size: cover;
+        padding: 0 15vw;
+        padding-bottom: 6vw;
     }
 }
