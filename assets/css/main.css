@@ -189,6 +189,11 @@ a:hover {
     color: #007bff;
 }
 
+.featurette-image {
+    max-width: 400px;
+    max-height: 400px;
+}
+
 /* ===================================================================
  * # testimonials
  * ------------------------------------------------------------------- */
@@ -234,7 +239,14 @@ a:hover {
 }
 
 .skills-heading {
-    padding: 2vw 0;
+    margin-bottom: 0;
+    padding-top: 2vw;
+}
+
+.skills-p {
+    margin: 0;
+    padding-bottom: 2vw;
+    font-size: 1.2rem;
 }
 
 .skillContainer {
