@@ -1,6 +1,6 @@
 <?php
 require_once('email_config.php');
-require('phpmailer/PHPMailer/PHPMailerAutoload.php');
+require('phpmailer/PHPMailer/src/PHPMailerAutoload.php');
 
 //Validate POST input
 $message = [];
