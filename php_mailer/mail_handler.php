@@ -1,6 +1,6 @@
 <?php
 require_once('email_config.php');
-require('phpmailer/PHPMailer/src/PHPMailerAutoload.php');
+require('PHPMailer/src/PHPMailer.php');
 
 //Validate POST input
 $message = [];
@@ -62,7 +62,7 @@ $mail->addAddress(EMAIL_TO_ADDRESS, EMAIL_USERNAME);
 
 $mail->addReplyTo($message['email'], $message['name']);
 
-$message['subject'] = $message[;name] . " has sent you a Contact Form message";
+$message['subject'] = $message['name'] . " has sent you a Contact Form message";
 
 $mail->isHTML(true);
 $message['message'] = nl2br($message['message']); //convert newline chars to line break html tags
