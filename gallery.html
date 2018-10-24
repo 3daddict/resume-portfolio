@@ -13,9 +13,11 @@
     <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-POYwD7xcktv3gUeZO5s/9nUbRJG/WOmV6jfEGikMJu77LGYO8Rfs2X7URG822aum" crossorigin="anonymous">
     <link rel="stylesheet" href="./assets/css/gallery.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
 
     <script src="./assets/js/jquery-3.3.1.min.js" type="text/javascript"></script>
     <script src="./assets/js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="./assets/js/validator.js" type="text/javascript"></script>
     <script defer src="https://pro.fontawesome.com/releases/v5.4.1/js/all.js" integrity="sha384-0+tugznPwCEvPiypW+OwmFjAQvRKlgI0ZZZW3nofNlLMmbYXbmNvfX/9up9XQSRs" crossorigin="anonymous"></script>
     <script src="./assets/js/app.js" type="text/javascript"></script>
 
@@ -38,7 +40,8 @@
     <section class="gallery-block cards-gallery">
 	    <div class="container">
 	        <div class="heading">
-	          <h2>Cards Gallery</h2>
+              <h2>Project Gallery</h2>
+              <p>Here are some projects I have built</p>
 	        </div>
 	        <div class="row">
 	            <div class="col-md-6 col-lg-4">
@@ -107,9 +110,59 @@
 	                    </div>
 	                </div>
 	            </div>
-	        </div>
+            </div>
+            <div class="row float-right">
+                <a class="btn btn-danger" id="galleryBackBtn" href="/" role="button">BACK</a>
+            </div>
 	    </div>
     </section>
+
+    <!-- Footer -->
+    <footer class="page-footer">
+        <section class="footer-bar">
+            <div class="container-fluid">
+                <div class="row py-4 d-flex align-items-center">
+                    <div class="col-md-6 col-lg-5 text-center text-md-left mb-4 mb-md-0">
+                        <h4 class="mb-0">Let's connect</h4>
+                    </div>
+                    <div class="col-md-6 col-lg-7 text-center text-md-right">
+                        <a href="#" target="_blank" class="footer-sm-icon"><i class="fal fa-file-alt"></i></a>
+                        <a href="https://www.linkedin.com/in/msalvati/" target="_blank" class="footer-sm-icon"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://github.com/3daddict" target="_blank" class="footer-sm-icon"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="footer-main-content">
+            <div class="container text-center text-md-left">
+                <div class="row">
+                    <div class="col-sm-5 mx-auto mb-4">
+                        <h6 class="text-uppercase font-weight-bold">Michael Salvati</h6>
+                        <hr class="footer-hr-accent accent-2 mb-4 mt-0 d-inline-block mx-auto">
+                        <p>Web developer specializing in both product management and front-end technologies.</p>
+                        <p><i class="fal fa-map-marker-alt"></i>  Orange County, CA</p>
+                        <p><i class="fal fa-envelope"></i>  Contact me: <a href="mailto:info&#64;msalvati.com">Click Here</a></p>
+                    </div>
+                    <div class="col-sm-3 mx-auto mb-4">
+                        <h6 class="text-uppercase font-weight-bold">Skillset</h6>
+                        <hr class="footer-hr-accent accent-2 mb-4 mt-0 d-inline-block mx-auto">
+                        <p>Front-End | UI/UX</p>
+                        <p>Technical Product Management</p>
+                        <p>Git Version Control</p>
+                    </div>
+                    <div class="col-sm-2 mx-auto mb-4">
+                        <h6 class="text-uppercase font-weight-bold">Featured Apps</h6>
+                        <hr class="footer-hr-accent accent-2 mb-4 mt-0 d-inline-block mx-auto">
+                        <p><a href="https://oneclicksolar.com" target="_blank">OneClickSolar</i></a></p>
+                        <p><a href="http://listrally.com/" target="_blank">ListRally App</a></p>
+                        <p><a href="https://3daddict.github.io/c7.18_hackathon2/" target="_blank">Movie Meerkat</a></p>
+                        <p><a href="https://3daddict.github.io/todo-list-js/" target="_blank">To Do List</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="text-muted text-center">© Michael Salvati <span id="copyDate"></span></div>
+        </section>
+    </footer>
 </body>
 
 </html>
