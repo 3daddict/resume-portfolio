@@ -1,6 +1,7 @@
 <?php
 require_once('email_config.php');
-require('phpmailer/PHPMailer/src/PHPMailerAutoload.php');
+require('PHPMailer/src/PHPMailer.php');
+require('PHPMailer/src/SMTP.php');
 
 //Validate POST input
 $message = [];
@@ -36,7 +37,7 @@ if($output['success'] !== null) {
     exit();
 }
 
-$mail = new PHPMailer;
+$mail = new PHPMailer\PHPMailer\PHPMailer;
 $mail->SMTPDebug = 3;           // Enable verbose debug output. Change to 0 to disable debugging output.
 
 $mail->isSMTP();                // Set mailer to use SMTP.
@@ -62,7 +63,7 @@ $mail->addAddress(EMAIL_TO_ADDRESS, EMAIL_USERNAME);
 
 $mail->addReplyTo($message['email'], $message['name']);
 
-$message['subject'] = $message[;name] . " has sent you a Contact Form message";
+$message['subject'] = $message['name'] . " has sent you a Contact Form message";
 
 $mail->isHTML(true);
 $message['message'] = nl2br($message['message']); //convert newline chars to line break html tags
