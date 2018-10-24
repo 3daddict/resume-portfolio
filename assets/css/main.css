@@ -235,7 +235,13 @@ a:hover {
  * ------------------------------------------------------------------- */
 .skills-container {
     padding-bottom: 6vw;
-    width: 100vw;
+}
+
+.skill-bar {
+    background-color: #2d9ee0;
+    color: #EEE;
+    font-size: 1.5em;
+    width: 100%;
 }
 
 .skills-heading {
