@@ -1,6 +1,7 @@
 <?php
 require_once('email_config.php');
 require('PHPMailer/src/PHPMailer.php');
+require('PHPMailer/src/SMTP.php');
 
 //Validate POST input
 $message = [];
@@ -36,7 +37,7 @@ if($output['success'] !== null) {
     exit();
 }
 
-$mail = new PHPMailer;
+$mail = new PHPMailer\PHPMailer\PHPMailer;
 $mail->SMTPDebug = 3;           // Enable verbose debug output. Change to 0 to disable debugging output.
 
 $mail->isSMTP();                // Set mailer to use SMTP.
