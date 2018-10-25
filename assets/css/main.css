@@ -130,6 +130,19 @@ a:hover {
     background-color: rgba(30, 30, 30, 0.25);  
 }
 
+.link {
+    margin-right: 15px;
+    padding: .25rem 0;
+    color: rgb(146, 146, 146);
+    font-weight: 300;
+    text-decoration: none;
+}
+
+.link:hover {
+    color: #2d9ee0;
+    text-decoration: none;
+}
+
 /* ===================================================================
  * # about
  * ------------------------------------------------------------------- */
@@ -193,6 +206,11 @@ a:hover {
 .featurette-image {
     max-width: 400px;
     max-height: 400px;
+}
+
+.gallery-img {
+    max-height: 120px;
+    margin: 25px auto;
 }
 
 /* ===================================================================
