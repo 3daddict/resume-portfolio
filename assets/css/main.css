@@ -1,6 +1,16 @@
 body {
     position: relative;
 }
+p {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.h2-heading {
+    font-size: 5.5rem;
+}
+.lead {
+    font-size: 1.25rem;
+}
 
 /* ===================================================================
  * # hero
@@ -33,9 +43,13 @@ body,
 }
 
 .cover {
-    padding: 1.5rem 1.5rem 2.0rem 1.5rem;
+    padding: 3.5rem 2.5rem;
     text-shadow: 0 .05rem .1rem rgba(0, 0, 0, .5);
     background-color: rgba(30, 30, 30, 0.5);
+}
+
+.text-shadow {
+    text-shadow: 0 0.05rem 0.1rem rgba(0, 0, 0, .5)
 }
 
 .cover .btn-lg {
@@ -70,9 +84,10 @@ body,
     width: 50px;
     border: 2px solid #EEE;
     border-radius: 50%;
-    margin: auto 20px;
+    margin: auto 15px;
     background-color: rgba(30, 30, 30, 0.6);
 }
+
 .learn-circle:hover, .learn-circle:active, .learn-circle:focus {
     color: rgb(255, 193, 7);
     border: 2px solid rgb(255, 193, 7);
@@ -148,16 +163,23 @@ a:hover {
  * ------------------------------------------------------------------- */
 .about-container {
     color: #EEE;
-    background: url(../../images/Mike-Web-Banner-v1.png) center center no-repeat;
-    background-size: cover;
     padding-bottom: 62px;
+    background-image:
+    url(/images/Mike-Web-Banner-Crop.png),
+    url(/images/Mike-Web-Banner-Mobile.png);
+    background-position:
+    bottom,
+    top;
+    background-size: contain, cover;
+    background-repeat:
+    no-repeat;
 }
 
 .h2-heading {
+    font-family: 'Wire One', sans-serif;
+    font-size: 3rem;
     font-weight: 300;
     line-height: 1;
-    letter-spacing: -.05rem;
-    margin-top: 2rem;
     margin-bottom: 25px;
 }
 
@@ -374,38 +396,44 @@ a:hover {
  * responsive:
  * headings
  * ------------------------------------------------------------------- */
- @media (min-width: 10em) {
 
+@media all and (min-width: 1280px){
     .h2-heading {
-        font-size: 30px;
-        margin-top: 2.5rem;
+        font-size: 5.5rem;
+    }
+    .lead {
+        font-size: 1.25rem;
     }
 }
 
-@media (min-width: 40em) {
-
+@media all and (min-width: 768px) and (max-width: 1024px) {
     .h2-heading {
-        font-size: 50px;
-        margin-top: 2.5rem;
+        font-size: 4.5rem;
+    }
+    .lead {
+        font-size: 1.0rem;
     }
 }
 
-@media (min-width: 62em) {
+@media all and (min-width: 480px) and (max-width: 768px) {
     .h2-heading {
-        margin-top: 2.5rem;
+        font-size: 3.5rem;
+    }
+    .lead {
+        font-size: 0.9rem;
     }
 }
 
-@media (min-width: 40em) {
-
-    .featurette-heading {
-        font-size: 50px;
+@media all and (max-width: 480px) {
+    .h2-heading {
+        font-size: 3.5rem;
     }
-}
-
-@media (min-width: 62em) {
-    .featurette-heading {
-        margin-top: 2.5rem;
+    .lead {
+        font-size: 0.8rem;
+    }
+    .learn-circle {
+        height: 40px;
+        width: 40px;
     }
 }
 
