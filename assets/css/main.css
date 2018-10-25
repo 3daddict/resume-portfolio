@@ -9,7 +9,12 @@ p {
     font-size: 5.5rem;
 }
 .lead {
-    font-size: 1.25rem;
+    font-size: 1.0rem;
+    font-weight: 300;
+}
+
+.btn {
+    margin: 6px auto;
 }
 
 /* ===================================================================
@@ -402,7 +407,7 @@ a:hover {
         font-size: 5.5rem;
     }
     .lead {
-        font-size: 1.25rem;
+        font-size: 1.0rem;
     }
 }
 
@@ -435,6 +440,7 @@ a:hover {
         height: 40px;
         width: 40px;
     }
+    
 }
 
 /* ------------------------------------------------------------------- 

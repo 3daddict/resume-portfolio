@@ -6,7 +6,9 @@ function initializePortfolio() {
     carouselRotation() //run the carousel ratation
     formValidation() //contact form validation
     copyrightYear() //update copyright date
-    
+    $(function () {
+        $('[data-toggle="tooltip"]').tooltip()
+      }) //enable tooltips
 }
 
 
