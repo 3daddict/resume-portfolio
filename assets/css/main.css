@@ -166,12 +166,12 @@ a:hover {
 /* ===================================================================
  * # about
  * ------------------------------------------------------------------- */
-.about-container {
+ .about-container {
     color: #EEE;
     padding-bottom: 62px;
     background-image:
-    url(/images/Mike-Web-Banner-Crop.png),
-    url(/images/Mike-Web-Banner-Mobile.png);
+    url("../../images/Mike-Web-Banner-Crop.png"),
+    url("../../images/Mike-Web-Banner-Mobile.png");
     background-position:
     bottom,
     top;
