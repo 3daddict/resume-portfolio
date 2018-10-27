@@ -40,6 +40,7 @@ if($output['success'] !== null) {
 
 /* Create a new PHPMailer object. Passing TRUE to the constructor enables exceptions. */
 $mail = new PHPMailer(TRUE);
+$mail->SMTPDebug = 3;  // Enable verbose debug output. Change to 0 to disable debugging output.
 
 /* Open the try/catch block. */
 try {
@@ -92,6 +93,7 @@ EOT;
    } else {
       $message = 'Invalid email address, message ignored.';
    }
+   echo json_encode($output);
 }
 catch (Exception $e)
 {
