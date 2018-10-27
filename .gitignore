@@ -1,2 +1,2 @@
 
-/php_mailer/PHPMailer/email_config.php
+/vendor/config/email_config.php
