@@ -167,17 +167,20 @@ a:hover {
  * # about
  * ------------------------------------------------------------------- */
  .about-container {
+    position: relative;
     color: #EEE;
-    padding-bottom: 62px;
-    background-image:
-    url("../../images/Mike-Web-Banner-Crop.png"),
-    url("../../images/Mike-Web-Banner-Mobile.png");
-    background-position:
-    bottom,
-    top;
-    background-size: contain, cover;
-    background-repeat:
-    no-repeat;
+    margin-bottom: 62px;
+    background-image: url("../../images/Mike-Web-Banner-Mobile.png");
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.about-img-wrapper {
+    background-image: url("../../images/Mike-Web-Banner-Crop.png");
+    background-position: bottom;
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 
 .h2-heading {
@@ -187,6 +190,11 @@ a:hover {
     line-height: 1;
     margin-bottom: 25px;
 }
+
+.about-text {
+    margin-bottom: 62px;
+}
+
 
 /* ===================================================================
  * # featurettes
@@ -593,6 +601,9 @@ and (min-width : 1824px) {
         background: url(../../images/Mike-Web-Banner-Mobile.png) center center no-repeat;
         background-size: cover;
         padding: 0 15vw;
-        padding-bottom: 6vw;
+    }
+
+    .about-img-wrapper {
+        background: none;
     }
 }
