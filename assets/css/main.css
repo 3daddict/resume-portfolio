@@ -246,7 +246,14 @@ a:hover {
 .gallery-img {
     max-height: 120px;
     margin: 25px auto;
+    transition: transform .5s; /* Animation */
 }
+
+.gallery-img:hover {
+    transform: scale(1.2);
+}
+
+
 
 /* ===================================================================
  * # testimonials
