@@ -167,17 +167,20 @@ a:hover {
  * # about
  * ------------------------------------------------------------------- */
  .about-container {
+    position: relative;
     color: #EEE;
-    padding-bottom: 62px;
-    background-image:
-    url("../../images/Mike-Web-Banner-Crop.png"),
-    url("../../images/Mike-Web-Banner-Mobile.png");
-    background-position:
-    bottom,
-    top;
-    background-size: contain, cover;
-    background-repeat:
-    no-repeat;
+    margin-bottom: 62px;
+    background-image: url("../../images/Mike-Web-Banner-Mobile.png");
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.about-img-wrapper {
+    background-image: url("../../images/Mike-Web-Banner-Crop.png");
+    background-position: bottom;
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 
 .h2-heading {
@@ -187,6 +190,11 @@ a:hover {
     line-height: 1;
     margin-bottom: 25px;
 }
+
+.about-text {
+    margin-bottom: 62px;
+}
+
 
 /* ===================================================================
  * # featurettes
@@ -238,7 +246,14 @@ a:hover {
 .gallery-img {
     max-height: 120px;
     margin: 25px auto;
+    transition: transform .5s; /* Animation */
 }
+
+.gallery-img:hover {
+    transform: scale(1.2);
+}
+
+
 
 /* ===================================================================
  * # testimonials
@@ -593,6 +608,55 @@ and (min-width : 1824px) {
         background: url(../../images/Mike-Web-Banner-Mobile.png) center center no-repeat;
         background-size: cover;
         padding: 0 15vw;
-        padding-bottom: 6vw;
+    }
+
+    .about-img-wrapper {
+        background: none;
     }
 }
+
+/* ------------------------------------------------------------------- 
+ * responsive:
+ * About Fade-in
+ * ------------------------------------------------------------------- */
+
+.rotateInDownLeft {
+    -webkit-animation-name: rotateInDownLeft;
+    animation-name: rotateInDownLeft;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    }
+    @-webkit-keyframes rotateInDownLeft {
+    0% {
+    -webkit-transform-origin: left bottom;
+    transform-origin: left bottom;
+    -webkit-transform: rotate3d(0, 0, 1, -45deg);
+    transform: rotate3d(0, 0, 1, -45deg);
+    opacity: 0;
+    }
+    100% {
+    -webkit-transform-origin: left bottom;
+    transform-origin: left bottom;
+    -webkit-transform: none;
+    transform: none;
+    opacity: 1;
+    }
+    }
+    @keyframes rotateInDownLeft {
+    0% {
+    -webkit-transform-origin: left bottom;
+    transform-origin: left bottom;
+    -webkit-transform: rotate3d(0, 0, 1, -45deg);
+    transform: rotate3d(0, 0, 1, -45deg);
+    opacity: 0;
+    }
+    100% {
+    -webkit-transform-origin: left bottom;
+    transform-origin: left bottom;
+    -webkit-transform: none;
+    transform: none;
+    opacity: 1;
+    }
+    } 
