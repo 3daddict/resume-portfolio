@@ -1,5 +1,5 @@
-/client/src/node_modules
-/client/src/yarn.lock
+/client/node_modules
+/client/yarn.lock
 /node_modules
 yarn.lock
 .env
