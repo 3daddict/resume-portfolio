@@ -1,0 +1,10 @@
+{
+  "name": "resume-portfolio",
+  "version": "1.0.0",
+  "description": "Web Developer Portfolio",
+  "main": "index.js",
+  "repository": "https://github.com/3daddict/resume-portfolio.git",
+  "author": "Michael Salvati",
+  "license": "MIT",
+  "dependencies": {}
+}

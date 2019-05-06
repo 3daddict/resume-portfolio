@@ -1,2 +1,5 @@
-
-/vendor/config/
+/client/src/node_modules
+/client/src/yarn.lock
+/node_modules
+yarn.lock
+.env
